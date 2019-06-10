@@ -1,4 +1,4 @@
-﻿#Connect-AzureRmAccount
+﻿Connect-AzureRmAccount
 
 
 #Register-AzureRmResourceProvider -ProviderNamespace 'Microsoft.PolicyInsights'
