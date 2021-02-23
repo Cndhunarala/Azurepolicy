@@ -15,11 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Create Pull Request
-        id: cpr
+      - name: pull request
         uses: peter-evans/create-pull-request@v3
         with:
-          token: 87d3f8932a82280bc8bbffa3ccf39df2dc099dfd
+          token: e94a179ffb880ba66d95670f9cc147c16900d0d2
           commit-message: Update report
           branch: example-patches
          
