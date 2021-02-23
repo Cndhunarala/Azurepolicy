@@ -21,4 +21,4 @@ jobs:
           with:
             azure-devops-project-url: https://dev.azure.com/sindhunaralaiiitn/Testing2
             azure-pipeline-name: 'Cndhunarala.Azurepolicy (1)'
-            azure-devops-token: abcdef123
+            azure-devops-token: ogky7tvdw5jsmbe2amik3dnmeqtio7igxj4ufc4bmf2tomowg3fa
