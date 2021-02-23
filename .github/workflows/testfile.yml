@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Create Pull Request
-        uses: Azurepolicy/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v3
         with:
           token: ogky7tvdw5jsmbe2amik3dnmeqtio7igxj4ufc4bmf2tomowg3fa
           commit-message: Add report file
