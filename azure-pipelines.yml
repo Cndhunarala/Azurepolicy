@@ -22,13 +22,13 @@ steps:
     sudo apt-add-repository https://cli.github.com/packages
     sudo apt update
     sudo apt install gh 
-  displayName: 'Install gh'
+  displayName: 'INSTALLING gh'
   # specific branch
 
 - script: |
     echo AUTHENTICATING gh
     gh auth login --with-token c0bddb963d7c8c58175cc7585caaeb0c0466837a
-    gh repo fork satishgampala/dynamic-transcoder --remote=false
+    # gh repo fork satishgampala/dynamic-transcoder --remote=false
   displayName: 'AUTHENTICATE gh'
 
 - task: GitHubComment@0
