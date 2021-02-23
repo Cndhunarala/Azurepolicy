@@ -17,6 +17,13 @@ steps:
 
 
 - script: |
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+    sudo apt-add-repository https://cli.github.com/packages
+    sudo apt update
+    sudo apt install gh 
+# auth
+    gh auth login --with-token  $(token)
+    gh repo fork satishgampala/dynamic-transcoder --remote=false
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
