@@ -18,7 +18,7 @@ jobs:
       - name: pull request
         uses: peter-evans/create-pull-request@v3
         with:
-          token: db69e1c03993195adabe9cad5b0ac0783dda077f
+          token: f994b617fcf0dc762cc42189c420b260d6975f84
           commit-message: Update report
           branch: example-patches
          
