@@ -20,10 +20,15 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ogky7tvdw5jsmbe2amik3dnmeqtio7igxj4ufc4bmf2tomowg3fa
+          branch: test
           commit-message: Add report file
           title: '[Example] Add report file'
           body: >
             This PR is auto-generated
+      - name: Check outputs
+        run: |
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
 #     build:
 #         name: Call Azure Pipeline
 #         runs-on: ubuntu-latest
