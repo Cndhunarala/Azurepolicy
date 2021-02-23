@@ -10,18 +10,32 @@ on:
 #   pull_request:
 #     branches:
 #       - test
-
 jobs:
   createPullRequest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+     
       - name: Create Pull Request
+        id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: update 
           token: 4210b6a486304b159b7a3b70716e2d14aa902502
-          branch: test
+          commit-message: Update report
+          branch: example-patches
+         
+# jobs:
+#   createPullRequest:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Create Pull Request
+#         uses: peter-evans/create-pull-request@v3
+#         with:
+#           commit-message: update 
+#           token: 4210b6a486304b159b7a3b70716e2d14aa902502
+#           branch: test
           
       - name: Check outputs
         run: |
