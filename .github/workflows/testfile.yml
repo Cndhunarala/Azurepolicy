@@ -19,7 +19,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
-          token: 4210b6a486304b159b7a3b70716e2d14aa902502
+          token: 87d3f8932a82280bc8bbffa3ccf39df2dc099dfd
           commit-message: Update report
           branch: example-patches
          
