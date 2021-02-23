@@ -2,10 +2,14 @@ name: CI
 
 # Run this workflow every time a commit is pushed to main or a pull request is opened against main
 on:
-push:
-    branches: master
-pull_request:
-    branches: test
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - test
 
 jobs:
     build:
