@@ -20,5 +20,5 @@ jobs:
           uses: Azure/pipelines@v1
           with:
             azure-devops-project-url: https://dev.azure.com/sindhunaralaiiitn/Testing2
-            azure-pipeline-name: 'My Pipeline'
+            azure-pipeline-name: 'Cndhunarala.Azurepolicy (1)'
             azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
