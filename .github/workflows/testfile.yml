@@ -10,17 +10,17 @@ on:
 #   pull_request:
 #     branches:
 #       - test
-jobs:
-  createPullRequest:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: pull request
-        uses: peter-evans/create-pull-request@v2
-        with:
-          token: da14a84c2608392702cfda3aea074a8ba7da88e4
-          commit-message: Update report
-          branch: example-patches
+# jobs:
+#   createPullRequest:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: pull request
+#         uses: peter-evans/create-pull-request@v2
+#         with:
+#           token: da14a84c2608392702cfda3aea074a8ba7da88e4
+#           commit-message: Update report
+#           branch: example-patches
          
 # jobs:
 #   createPullRequest:
@@ -34,17 +34,18 @@ jobs:
 #           token: 4210b6a486304b159b7a3b70716e2d14aa902502
 #           branch: test
           
-      - name: Check outputs
-        run: |
-          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
-          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
-#     build:
-#         name: Call Azure Pipeline
-#         runs-on: ubuntu-latest
-#         steps:
-#         - name: Azure Pipelines Action
-#           uses: Azure/pipelines@v1
-#           with:
-#             azure-devops-project-url: https://dev.azure.com/sindhunaralaiiitn/Testing2
-#             azure-pipeline-name: 'Cndhunarala.Azurepolicy (1)'
-#             azure-devops-token: ogky7tvdw5jsmbe2amik3dnmeqtio7igxj4ufc4bmf2tomowg3fa
+#       - name: Check outputs
+#         run: |
+#           echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+#           echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
+jobs:
+  build:
+     name: Call Azure Pipeline
+     runs-on: ubuntu-latest
+     steps:
+         - name: Azure Pipelines Action
+           uses: Azure/pipelines@v1
+           with:
+             azure-devops-project-url: https://dev.azure.com/sindhunaralaiiitn/Testing2
+             azure-pipeline-name: 'Testing2-CI'
+             azure-devops-token: ogky7tvdw5jsmbe2amik3dnmeqtio7igxj4ufc4bmf2tomowg3fa
