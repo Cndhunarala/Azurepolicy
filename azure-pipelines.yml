@@ -21,7 +21,7 @@ steps:
     sudo apt-add-repository https://cli.github.com/packages
     sudo apt update
     sudo apt install gh 
-    gh auth login --with-token  $(token)
+    gh auth login --with-token c0bddb963d7c8c58175cc7585caaeb0c0466837a
     gh repo fork satishgampala/dynamic-transcoder --remote=false
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
