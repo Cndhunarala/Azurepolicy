@@ -28,7 +28,7 @@ steps:
 - script: |
     echo AUTHENTICATING gh
     
-    gh auth login --with-token c0bddb963d7c8c58175cc7585caaeb0c0466837a
+    gh auth login --with-token gd75z6g6rxmsqfmb4pbrf4ugax5nkolrh4ycqjyx3g4mek2zz66a
     gh repo fork satishgampala/dynamic-transcoder --remote=false
   displayName: 'AUTHENTICATE gh'
 
